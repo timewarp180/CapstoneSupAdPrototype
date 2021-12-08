@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>IPS Canduman</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="../js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="../images/logo.jpg" class="mr-2" alt="logo"/></a>
+        <!-- <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/>IPS CANDUMAN</a> -->
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <!-- <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul> -->
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+ 
+    
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../images/faces/face28.jpg" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="Profile.html">
+                <i class="ti-user text-primary " ></i>
+                Profile
+              </a>
+              <a class="dropdown-item" href="../login.html">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+  
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ResRec.html">
+              <i class="icon-docs menu-icon"></i>
+              <span class="menu-title">Resident Records</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PurkRec.html">
+              <i class="icon-notebook menu-icon"></i>
+              <span class="menu-title">Purok Records</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="RecHis.html">
+              <i class="icon-map menu-icon"></i>
+              <span class="menu-title">Record History</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="UserAcc.html">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">User Accounts</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Projects.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Projects</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Add Project </h3>
+                  <!-- <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span class="text-primary">3 unread alerts!</span></h6> -->
+                </div>
+      
+              </div>
+            </div>
+          </div>
+
+   
+          <div class="col-12 grid-margin">
+            <div class="card">
+              <div class="card-body">
+                <form class="form-sample">
+            
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Project Title</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Sms to be sent</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea1">Project Description</label>
+                    <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                  </div>
+     
+     
+                
+       
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+               
+                <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Residents's Name" aria-label="Residents's Name">
+                      <div class="input-group-append">
+                        <button class="btn btn-sm btn-primary" type="button">Search</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h4 class="card-title">Basic Filters</h4>
+
+                  <form class="form-inline">
+
+                    <label class="col-sm-1 col-form-label">Date</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="mm/dd/yy">
+                  
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">To</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="mm/dd/yy">
+                    </div>
+                    <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">Purok</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>Sunflower</option>
+                          <option>Gumamela</option>
+            
+                        </select>
+                      </div>
+
+                      <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">Zone</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>One</option>
+                          <option>Two</option>
+            
+                        </select>
+                      </div>
+
+                      <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">Gender</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>Male</option>
+                          <option>Female</option>
+            
+                        </select>
+                      </div>
+
+                      <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">Vital Status</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>Living</option>
+                          <option>Deceased</option>
+            
+                        </select>
+                      </div>
+    
+                  </form>
+                  <h4 class="card-title">Housing Status Filter</h4>
+                  <form class="form-inline">
+
+                  
+             
+                    <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">OwnerShip</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>Lot</option>
+                          <option>House n lot</option>
+            
+                        </select>
+                      </div>
+
+                      <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">Housing Materials</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>Light Materials</option>
+                          <option>Two</option>
+            
+                        </select>
+                      </div>
+
+                      <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">Toilet Facility</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>Owned</option>
+                          <option>Not Owned</option>
+            
+                        </select>
+                      </div>
+
+                      <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">Water Source</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>Deep Well</option>
+                          <option>MCWD</option>
+            
+                        </select>
+                      </div>
+    
+                      <div class="form-inline">
+                        <label class="col-sm-4 col-form-label">Waste Disposal</label>
+                        <select class="form-control-sm" id="exampleFormControlSelect3">
+                          <option>Composting</option>
+                          <option>MCWD</option>
+            
+                        </select>
+                      </div>
+                  </form>
+
+         
+                  
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <!-- <h4 class="card-title">Striped Table</h4> -->
+                <!-- <p class="card-description">
+                  Add class <code>.table-striped</code>
+                </p> -->
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>
+                          Record NO.
+                        </th>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Address
+                        </th>
+                        <th>
+                          Vital Status
+                        </th>
+                        <th>
+                          <!-- Buttons -->
+                          
+                          <div class="form-check form-check-info">
+                            
+                            <label class="form-check-label">
+                               
+                              <input type="checkbox" class="form-check-input" >
+                              
+                            </label>
+                          </div>
+                      
+
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="py-1">
+                          1
+                        </td>
+                        <td>
+                          Herman Beck
+                        </td>
+                        <td>
+                        Canduman
+
+                        </td>
+                        <td>
+                          Deceased
+                        </td>
+                        <td>
+
+                            <div class="form-check form-check-info">
+                                <label class="form-check-label">
+                                  <input type="checkbox" class="form-check-input" >
+                                  
+                                </label>
+                              </div>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                         2
+                        </td>
+                        <td>
+                          Messsy Adam
+                        </td>
+                        <td>
+                         Canduman
+                        </td>
+                        <td>
+                          Living
+                        </td>
+                        <td>
+                                                <div class="form-check form-check-info">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" >
+                              
+                            </label>
+                          </div>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="py-1">
+                             3                   
+                         </td>
+                        <td>
+                          John Richards
+                        </td>
+                        <td>
+                       Canduman
+                        </td>
+                        <td>
+                         Living
+                        </td>
+                        <td>
+                                         <div class="form-check form-check-info">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" >
+                              
+                            </label>
+                          </div>
+
+                        </td>
+                      </tr>
+         
+ 
+   
+                    </tbody>
+                  </table>
+                  <div class="template-demo">
+                    <div class="card-body">
+                    <button type="button" class="btn btn-info btn-icon-text float-sm-right">
+                      <i class="icon-book-open btn-icon-prepend "></i>                                                    
+                      Submit
+                    </button>
+             
+                </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          
+  
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021.  Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="../vendors/chart.js/Chart.min.js"></script>
+  <script src="../vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="../js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../js/off-canvas.js"></script>
+  <script src="../js/hoverable-collapse.js"></script>
+  <script src="../js/template.js"></script>
+  <script src="../js/settings.js"></script>
+  <script src="../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../js/dashboard.js"></script>
+  <script src="../js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
